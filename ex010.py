@@ -1,6 +1,6 @@
-# Perguntar quanto dinheiro a pessoa tem e fazer a conversão em dolar (1USD = 3.27BRL)
-n = float(input('Quanto dinheiro você tem na carteira? R$'))
-d = 3.27
-c = n/d
-print('Você tem \033[1;32mR${:.2f}\033[m na carteira. Levando em consideração o câmbio de R${:.2f} para cada dolar,'
-      'você pode comprar \033[1;32mUSD{:.2f}\033[m!'.format(n, d, c))
+# Ask how much money does someone have and convert it to American Dolars (1USD = 3.27BRL)
+amount = float(input('How much money have you got in your wallet? R$'))
+exchangeRate = 3.27
+convertion = amount/exchangeRate
+print(f"You've got \033[1;32mR${amount:.2f}\033[m in your wallet. Considering the Exchange rate of R${exchangeRate:.2f} "
+      f"for each dolar, you can buy \033[1;32mUSD{convertion:.2f}\033[m!")

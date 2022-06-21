@@ -1,31 +1,24 @@
-# Pedir uma número e entregar a sua tabuada.
+# Ask for a nunber and deliver it's mutiplication table.
 
-# Primeira forma: Com os conhecimentos até agora do Curso em Vídeo
-cor = {'red': '\033[1;31m',
+# In here I've done it just what was tought this far in this course, because I know that it will be remade later in an
+# other exercise using the FOR loop.
+color = {'red': '\033[1;31m',
        'black': '\033[1;30m',
        'green': '\033[1;32m',
        'yellow': '\033[1;33m',
        'blue': '\033[1;34m',
        'purple': '\033[1;35m'}
 
-n = int(input('Digite um número inteiro entre 0 e 9:'))
-print('Segue a tabuada para {}:'.format(n))
-print('\033[1;30m=-'*10)
-print('\033[1;31m', n, 'x 1 = ', n*1)
-print(n, 'x 2 = ', n*2)
-print(n, 'x 3 = ', n*3)
-print(n, 'x 4 = ', n*4)
-print(n, 'x 5 = ', n*5)
-print(n, 'x 6 = ', n*6)
-print(n, 'x 7 = ', n*7)
-print(n, 'x 8 = ', n*8)
-print(n, 'x 9 = ', n*9)
-print('\033[1;30m-='*10)
-
-# Segunda Forma: Como aprendi no curso Python for Everybody
-
-'''n = int(input('Digite um número: '))
-print(f'A tabuada para {n} é: ')
-for t in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-    print(f'{n} x {t} = {n*t}')
-print('=*'*8)'''
+number = int(input('Type a integere number between 0 e 9:'))
+print(f'Here it is the multiplication table for {number}:')
+print(f'{color["red"]}=-'*10)
+print(f'{color["green"]}',number, 'x 1 = ', number * 1)
+print(number, 'x 2 = ', number * 2)
+print(number, 'x 3 = ', number * 3)
+print(number, 'x 4 = ', number * 4)
+print(number, 'x 5 = ', number * 5)
+print(number, 'x 6 = ', number * 6)
+print(number, 'x 7 = ', number * 7)
+print(number, 'x 8 = ', number * 8)
+print(number, 'x 9 = ', number * 9)
+print(f'{color["red"]}-='*10)
