@@ -1,6 +1,6 @@
-# Peça o valor do salário e mostre qual será o novo valor após um aumento de 15%
-s = float(input('Qual o seu salário atual?'))
-a = 0.15
-ns = s*(1+a)
-print('Após um aumento de \033[1;32m{:.0f}%\033[m o seu salário será de \033[1;32mR${:.2f}\033[m. Bem melhor, hein?'
-      .format((a*100), ns))
+# Ask for someones salary and return it's value after a 15% raise.
+originalSalarie = float(input('What is your salary?'))
+raiseRate = 0.15
+raisedSalary = originalSalarie * ( 1 + raiseRate)
+print(f'After a \033[1;32m{raiseRate * 100:.0f}%\033[m raise, your salarie will be \033[1;32mR${raisedSalary:.2f}\033[m.'
+      f' Much better, right?')
