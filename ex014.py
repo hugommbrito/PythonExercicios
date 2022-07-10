@@ -1,4 +1,4 @@
-# Peça uma temperatura em °C e converta para °F
-c = float(input('Digite uma temperatura em ºC:'))
+# Ask for the temperature in ºC and convert it to ºF
+c = float(input('Type a temperature in ºC:'))
 f = c * 1.8 + 32
-print('\033[1m{:.1f}ºC corresponde a {:.0f}ºF'.format(c, f))
+print(f'\033[1m{c:.1f}ºC is the same as {f:.0f}ºF')

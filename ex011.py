@@ -1,11 +1,11 @@
-# Perguntar a altura e largura de uma parede para calcular sua área e quanto de tinta deve ser usado para pinta-la
-# (para pintar 2m² usa 1L de tinta)
-cor = {'verde': '\033[1;32m',
-       'azul': '\033[1;34m',
-       'fim': '\033[m'}
-x = float(input('Qual a ALTURA da sua parede?'))
-y = float(input('Qual a LARGURA da sua parede?'))
-a = x * y
-t = a/2
-print('Sua parede mede {}{:.2f}m²{} e precisará de aproximadamente {}{:.2f}L{} de tinta para ser pintada'
-      .format(cor['verde'], a, cor['fim'], cor['azul'], t, cor['fim']))
+# Ask for the hight and length of a wall and calculate how many liters of paint will be necessarie to paint it.
+# (consider that 1L of paint is enought for 2m²)
+color = {'green': '\033[1;32m',
+         'blue': '\033[1;34m',
+         'clean': '\033[m'}
+hight = float(input('What is the HEIGHT of your wall?'))
+length = float(input('What is the LENGTH of your wall?'))
+area = hight * length
+inkNeeded = area / 2
+print(f"Your wall has {color['green']}{area:.2f}m²{color['clean']} and it will need about "
+      f"{color['blue']}{inkNeeded:.2f}L{color['clean']} of ink to be painted")
